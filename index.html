@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./styles.css">
+        
+    </head> 
+    <body>
+        <div class="container">
+            <div >
+                <h1 class = "header_text">HAPPY BIRTHDAYYY CUTIE PATOOTIE <3</h1>
+
+            </div>
+            <div class="gif_container" >
+                <img style="width: 250px" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDdtZ2JiZDR0a3lvMWF4OG8yc3p6Ymdvd3g2d245amdveDhyYmx6eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/cLS1cfxvGOPVpf9g3y/giphy.gif" alt="Cute animated illustration">
+            </div>
+            <div>
+                <p class="msg">It is my cutest bb's birthday and i am so happy just imagining this day while i write this. I am so thankful to your mom and dad for doing the deed 9 months earlier from 7th Aug, 2002 (dont say 2001 or i will k word you) goa me galti (not really) <3. If you werent here i genuinely dont know what i would do. You are the reason i could bear college and your smile is just a cherry on top which can defuse my stress. I hope you have fun today and that you stay happy forever. May this year you experience all the happiness. Love you!!! happy birthday again sweetie!</p>
+                <h1 class = "header_text" >Promise to let me put cake on your cheekies evrery birthday i am with you: </h1>
+            </div>
+            <div class = "buttons">
+                <button class="btn" id = "yesButton" onclick="nextPage()">Promise</button>
+                <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">Noooo</button>
+                <script>
+                    function nextPage() {
+                        window.location.href = "yes.html";
+                    }
+                    
+                    function moveButton() {
+                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+                        document.getElementById('noButton').style.left = `${x}px`;
+                        document.getElementById('noButton').style.top = `${y}px`;
+                    }
+                </script> 
+            </div>
+        </div>
+       
+    </body> 
+</html>
